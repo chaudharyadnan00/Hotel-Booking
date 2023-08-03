@@ -14,7 +14,7 @@ import BookingsPage from './pages/BookingsPage.jsx';
 import BookingPage from './pages/BookingPage';
 import Slideshow from './Slideshow';
 // import Slideshow from './Slideshow';
-axios.defaults.baseURL = 'http://localhost:4000';
+axios.defaults.baseURL = process.env.PORT_URL;
 const App = () => {
   return (
     <UserContextProvider>
